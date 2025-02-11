@@ -43,6 +43,5 @@ out/
 .env
 
 ##
-/src/main/resources/application.properties
 openapi3.json
 openapi3.yaml
