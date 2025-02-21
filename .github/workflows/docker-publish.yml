@@ -35,9 +35,9 @@ jobs:
           echo "${{ secrets.OBJECT_STORAGE_PRIVATE_KEY }}" > ~/.oci/private_key.pem
           chmod 600 ~/.oci/private_key.pem
 
-      # 3) Gradle 빌드
-      - name: Build using Gradle
-        run: ./gradlew build
+      # 3. Gradle 빌드: fat jar 생성
+      - name: Build fat jar
+        run: ./gradlew bootJar
 
       # 4) GHCR 로그인 (공식 액션 사용)
       - name: Log in to the Container registry
