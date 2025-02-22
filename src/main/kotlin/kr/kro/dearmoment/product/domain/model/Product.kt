@@ -64,6 +64,7 @@ data class Product(
      */
     val partialOriginalCount: Int? = null,
     val shootingTime: Duration? = null,
+    // shootingPlaceNumber: Int = 0,
     val shootingLocation: String = "",
     /**
      * 최대 의상 벌 수
